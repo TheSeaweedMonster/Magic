@@ -1,2 +1,2 @@
 # Lucid
-Lucid dreams are just interpretations of reality
+Lucid dreams are just interpretations of reality!
