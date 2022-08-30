@@ -1,2 +1,16 @@
-# Lucid
-Lucid dreams are just interpretations of reality!
+# Magic
+
+That's how this script works.
+
+Anyways, thanks to a long list of contributors and enthusiastic people wanting this script, I've put it back on github. Paste this into CE lua engine (any version should work). It will automatically attach to the correct process.
+
+You can run any lua script at the click of a button. Enjoy.
+
+This is for educational purposes, of course!
+
+Enjoy.
+
+
+
+
+
