@@ -1024,7 +1024,7 @@ rbx.set_script_hook = function(enabled, our_bytecode, our_bytecode_size)
         rbx.old_script_hook_bytes = util.read_bytes(rbx.script_hook, hook_size);
 
         local bytes1 = {
-            0xC7, 0x43, 0x08, -- mov [ebx+C], our_bytecode
+            0xC7, 0x43, 0x08, -- mov [ebx+8], our_bytecode
             bytes_bytecode[1], bytes_bytecode[2], bytes_bytecode[3], bytes_bytecode[4],
             0xC7, 0x43, 0x0C, -- mov [ebx+C], our_bytecode_size
             bytes_bytecode_size[1], bytes_bytecode_size[2], bytes_bytecode_size[3], bytes_bytecode_size[4],
