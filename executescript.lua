@@ -1,3 +1,4 @@
+-- written by static / jayyy
 assert(_VERSION ~= "5.3", "Lua 5.3 expected");
 
 -- Slightly limited. Don't expect to run Dex
