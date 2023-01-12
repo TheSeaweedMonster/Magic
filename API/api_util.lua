@@ -142,13 +142,13 @@ util.scan_xrefs = function(str, nresult)
 end
 
 util.get_code_size = function(location)
-    local str = disassemble(location);
+    local str = disassemble(location):gsub(' ','')
     local start = str:find('-') + 1;
     local at = start;
     while at < string.len(str) and str:sub(at, at) ~= '-' do
         at = at + 1;
     end
-    return math.floor((at - start - 1) / 3);
+    return math.floor((at - start) / 2);
 end
 
 util.place_jmp = function(location_from, location_to)
@@ -654,7 +654,7 @@ util.new_detour = function(location, reg32, reg_offset, count, new_value)
 			Sleep(1);
 		end
 		
-		return detour_data.stop();
+		return {}-- detour_data.stop();
 	end
 	
 	detour_data.start_async = function()
