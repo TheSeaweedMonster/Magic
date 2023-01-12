@@ -654,7 +654,7 @@ util.new_detour = function(location, reg32, reg_offset, count, new_value)
 			Sleep(1);
 		end
 		
-		return {}-- detour_data.stop();
+		return detour_data.stop();
 	end
 	
 	detour_data.start_async = function()
